@@ -15,6 +15,9 @@ IconData sendMessage=Icons.send;
 
 //=====================colors=================
 const Color white=Colors.white;
+const Color black=Colors.black;
+const Color grey=Color.fromARGB(255, 82, 82, 82);
+const Color lightGrey=Colors.grey;
 const Color purple=Color.fromARGB(255, 203, 148, 255);
 const Color purpleDark=Color.fromARGB(255, 111, 79, 141);
 

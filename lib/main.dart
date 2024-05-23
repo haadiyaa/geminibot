@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:geminibot/screens/homepage.dart';
+import 'package:geminibot/view/homescreen/homepage.dart';
 
 Future<void> main() async {
    
