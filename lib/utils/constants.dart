@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const String apiKey = "AIzaSyCNact63BcHC87y7jIQwmQDzpNQmFBmaUA";
+const String apiKey = "AIzaSyAPhbpwNBHkM49DPwjapBk0UXKrXnDr1kY";
 const String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$apiKey";
 
 // curl \

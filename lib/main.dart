@@ -1,9 +1,11 @@
-
 import 'package:flutter/material.dart';
+import 'package:geminibot/controller/chatprovider.dart';
 import 'package:geminibot/view/homescreen/homepage.dart';
+import 'package:provider/provider.dart';
 
-Future<void> main() async {
-   
+void main() {
+  //  Gemini.init(apiKey: apiKey);
+
   runApp(const MyApp());
 }
 
@@ -12,9 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context)=>ChatProvider()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: HomePage(),
+      ),
     );
   }
 }
