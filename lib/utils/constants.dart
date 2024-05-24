@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 
-const String apiKey = "AIzaSyAPhbpwNBHkM49DPwjapBk0UXKrXnDr1kY";
+const String apiKey = "AIzaSyAIFYdwD3OjLZO7TNCnFGsapG1UcWdhXwk";
 const String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$apiKey";
 
-// curl \
-//   -H 'Content-Type: application/json' \
-//   -d '{"contents":[{"parts":[{"text":"Explain how AI works"}]}]}' \
-//   -X POST 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=YOUR_API_KEY'
 //============bg image======================
 const String bgimage = "assets/chatbg1.jpg";
 

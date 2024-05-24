@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
           image: DecorationImage(image: AssetImage(bgimage), fit: BoxFit.cover),
         ),
         child: DashChat(
+          typingUsers: chatProvider.typing,
           messageOptions: dashChat.myMessageOptions(),
           messageListOptions: dashChat.myMessageListOptions(),
           inputOptions: dashChat.myInputOptions(),
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
           onSend: (ChatMessage m) {
             chatProvider.onSend(m);
           },
-          messages: chatProvider.messages,
+          messages: chatProvider.allMessages,
         ),
       ),
     );
