@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:geminibot/controller/chatprovider.dart';
+import 'package:geminibot/controller/networkcheckprovider.dart';
 import 'package:geminibot/utils/constants.dart';
 import 'package:geminibot/view/homescreen/homepage.dart';
 import 'package:provider/provider.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context)=>ChatProvider()),
+        ChangeNotifierProvider(create: (context)=>NetworkCheckProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

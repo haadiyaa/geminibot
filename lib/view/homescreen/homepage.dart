@@ -1,6 +1,7 @@
 import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:flutter/material.dart';
 import 'package:geminibot/controller/chatprovider.dart';
+import 'package:geminibot/controller/networkcheckprovider.dart';
 import 'package:geminibot/utils/constants.dart';
 import 'package:geminibot/view/homescreen/widgets/dashchat.dart';
 import 'package:provider/provider.dart';
@@ -14,6 +15,12 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   MyDashChat dashChat = MyDashChat();
+  // 
+  @override
+  void initState() {
+    super.initState();
+    Provider.of<NetworkCheckProvider>(context,listen: false).getConnectivity(context);
+  }
 
   @override
   Widget build(BuildContext context) {

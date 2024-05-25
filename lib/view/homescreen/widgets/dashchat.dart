@@ -14,6 +14,7 @@ class MyDashChat {
           containerColor: black,
           currentUserContainerColor: purpleDark,
           textColor: white,
+          showTime: true,
         );
   }
 
