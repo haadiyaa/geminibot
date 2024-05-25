@@ -1,4 +1,4 @@
-package com.example.geminibot
+package com.hadiya.geminibot
 
 import io.flutter.embedding.android.FlutterActivity
 

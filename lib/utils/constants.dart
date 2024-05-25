@@ -5,6 +5,8 @@ const String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/g
 
 //============bg image======================
 const String bgimage = "assets/chatbg1.jpg";
+const String bgimage2 = "assets/chatbg2.jpg";
+const String bgimage3 = "assets/chatbg2.png";
 
 //=================icons=====================
 IconData sendMessage=Icons.send;
@@ -13,9 +15,11 @@ IconData sendMessage=Icons.send;
 const Color white=Colors.white;
 const Color black=Colors.black;
 const Color grey=Color.fromARGB(255, 82, 82, 82);
-const Color lightGrey=Colors.grey;
-const Color purple=Color.fromARGB(255, 203, 148, 255);
-const Color purpleDark=Color.fromARGB(255, 111, 79, 141);
+const Color darkGrey=Color.fromARGB(255, 46, 46, 46);
+const Color lightGrey=Color.fromARGB(255, 14, 107, 110);
+const Color sendColor=Color.fromARGB(255, 10, 76, 78);
+const Color purple=Color.fromARGB(255, 243, 234, 180);
+const Color yellowdark=Color.fromARGB(255, 255, 242, 165);
 
 //================padding==============
 const EdgeInsetsGeometry sendIconPadding= EdgeInsets.all(10);

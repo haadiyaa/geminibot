@@ -3,11 +3,11 @@ import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:geminibot/controller/chatprovider.dart';
 import 'package:geminibot/controller/networkcheckprovider.dart';
 import 'package:geminibot/utils/constants.dart';
-import 'package:geminibot/view/homescreen/homepage.dart';
+import 'package:geminibot/view/homescreen/screen/homepage.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-   Gemini.init(apiKey: apiKey);
+  Gemini.init(apiKey: apiKey);
 
   runApp(const MyApp());
 }
@@ -19,12 +19,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context)=>ChatProvider()),
-        ChangeNotifierProvider(create: (context)=>NetworkCheckProvider()),
+        ChangeNotifierProvider(create: (context) => ChatProvider()),
+        ChangeNotifierProvider(create: (context) => NetworkCheckProvider()),
       ],
       child: MaterialApp(
+        theme: ThemeData(
+          appBarTheme: const AppBarTheme(
+            backgroundColor: lightGrey,
+            centerTitle: true,
+            titleTextStyle: TextStyle(color: white,fontWeight: FontWeight.bold,fontSize: 20),
+          ),
+        ),
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        home: const HomePage(),
       ),
     );
   }

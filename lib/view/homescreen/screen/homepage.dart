@@ -7,7 +7,7 @@ import 'package:geminibot/view/homescreen/widgets/dashchat.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -15,22 +15,27 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   MyDashChat dashChat = MyDashChat();
-  // 
+
   @override
   void initState() {
     super.initState();
-    Provider.of<NetworkCheckProvider>(context,listen: false).getConnectivity(context);
+    Provider.of<NetworkCheckProvider>(context, listen: false)
+        .getConnectivity(context);
   }
 
   @override
   Widget build(BuildContext context) {
     final chatProvider = Provider.of<ChatProvider>(context);
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Chat with Gemini'),
+      ),
       body: Container(
         decoration: const BoxDecoration(
-          image: DecorationImage(image: AssetImage(bgimage), fit: BoxFit.cover),
+          image: DecorationImage(image: AssetImage(bgimage3), fit: BoxFit.cover),
         ),
         child: DashChat(
+          
           typingUsers: chatProvider.typing,
           messageOptions: dashChat.myMessageOptions(),
           messageListOptions: dashChat.myMessageListOptions(),

@@ -3,6 +3,6 @@ import 'package:geminibot/utils/constants.dart';
 
 //================text styles===============
 
-const TextStyle timeStyle=TextStyle(color: lightGrey);
+const TextStyle timeStyle=TextStyle(color: grey);
 
 

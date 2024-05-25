@@ -20,7 +20,7 @@ class ChatProvider extends ChangeNotifier {
       await model.generateContent([content]).then((value) {
         print(value.text);
         ChatMessage m1 = ChatMessage(
-          text: value.text!,
+          text: value.text??'Sorry, something went wrong!',
           user: bot,
           createdAt: DateTime.now(),
         );
