@@ -3,18 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:geminibot/utils/constants.dart';
 import 'package:geminibot/utils/style.dart';
 import 'package:geminibot/view/homescreen/widgets/CustomDivider.dart';
+import 'package:intl/date_time_patterns.dart';
 import 'package:intl/intl.dart';
 
 class MyDashChat {
   
   MessageOptions myMessageOptions() {
-    return const MessageOptions(
+    return MessageOptions(
           showOtherUsersAvatar: true,
           showOtherUsersName: true,
           containerColor: black,
           currentUserContainerColor: purpleDark,
           textColor: white,
           showTime: true,
+          timeFormat: DateFormat('hh:mm a')
         );
   }
 
