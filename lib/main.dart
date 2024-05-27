@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:geminibot/controller/chatprovider.dart';
 import 'package:geminibot/controller/networkcheckprovider.dart';
 import 'package:geminibot/utils/constants.dart';
@@ -7,8 +6,6 @@ import 'package:geminibot/view/homescreen/screen/homepage.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  Gemini.init(apiKey: apiKey);
-
   runApp(const MyApp());
 }
 

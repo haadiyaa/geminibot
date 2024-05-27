@@ -18,8 +18,6 @@ const Color grey=Color.fromARGB(255, 82, 82, 82);
 const Color darkGrey=Color.fromARGB(255, 46, 46, 46);
 const Color lightGrey=Color.fromARGB(255, 14, 107, 110);
 const Color sendColor=Color.fromARGB(255, 10, 76, 78);
-const Color purple=Color.fromARGB(255, 243, 234, 180);
-const Color yellowdark=Color.fromARGB(255, 255, 242, 165);
 
 //================padding==============
 const EdgeInsetsGeometry sendIconPadding= EdgeInsets.all(10);

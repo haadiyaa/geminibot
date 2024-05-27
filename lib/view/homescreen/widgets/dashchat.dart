@@ -2,7 +2,7 @@ import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:flutter/material.dart';
 import 'package:geminibot/utils/constants.dart';
 import 'package:geminibot/utils/style.dart';
-import 'package:geminibot/view/homescreen/widgets/CustomDivider.dart';
+import 'package:geminibot/view/homescreen/widgets/customdivider.dart';
 import 'package:intl/intl.dart';
 
 class MyDashChat {

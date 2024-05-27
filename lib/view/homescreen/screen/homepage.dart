@@ -35,7 +35,6 @@ class _HomePageState extends State<HomePage> {
           image: DecorationImage(image: AssetImage(bgimage3), fit: BoxFit.cover),
         ),
         child: DashChat(
-          
           typingUsers: chatProvider.typing,
           messageOptions: dashChat.myMessageOptions(),
           messageListOptions: dashChat.myMessageListOptions(),
